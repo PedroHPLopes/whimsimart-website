@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Lightning Bolt Pen",
+      "price": "10",
+      "description": "Unleash your creativity with the Lightning Bolt Pen, a sleek and electrifying writing instrument that adds a jolt of inspiration to your every word.", 
+      "image": "img/image1.jpg"
+    },
+    {
+      "name": "Bubblegum Backpack",
+      "price": "15",
+      "description": "Carry your essentials in sweet style with the Bubblegum Backpack, featuring a vibrant and chewy design that will make you the envy of the hallway.",
+      "image": "img/image2.jpg"
+    },
+    {
+        "name": "Rainbow Hula Hoop",
+        "price": "20",
+        "description": "Embrace the joy of movement and color with the Rainbow Hula Hoop, a dazzling hoop that brings a whimsical touch to your fitness routines.",
+        "image": "img/image3.jpg"
+      },
+      {
+        "name": "Galatic Tea Infuser",
+        "price": "25",
+        "description": "Take your tea-drinking experience to the stars with the Galactic Tea Infuser, a celestial-themed tool that adds a touch of cosmic wonder to your brew.",
+        "image": "img/image4.jpg"
+      },
+      {
+        "name": "Polka Dot Sunglasses",
+        "price": "30",
+        "description": "Step out in style and protect your eyes from the sun with these Polka Dot Sunglasses, featuring a playful pattern that adds a retro flair to your look.",
+        "image": "img/image5.jpg"
+      },
+      {
+        "name": "Pixaleted Rubik's Cube",
+        "price": "35",
+        "description": "Challenge your problem-solving skills with the Pixelated Rubik's Cube, a modern twist on the classic puzzle that will keep your fingers and brain engaged.",
+        "image": "img/image6.jpg"
+      },
+      {
+        "name": "Doodle Notebook",
+        "price": "40",
+        "description": "Unleash your imagination on the pages of the Doodle Notebook, featuring blank sheets and a customizable cover that's ready to be filled with your creative sketches.",
+        "image": "img/image7.jpg"
+      },
+      {
+        "name": "Cloud Slippers",
+        "price": "45",
+        "description": "Drift away on a cloud of comfort with these fluffy Cloud Slippers, designed to keep your feet cozy and your dreams afloat.",
+        "image": "img/image8.jpg"
+      },
+      {
+        "name": "Melodic Rainstick",
+        "price": "50",
+        "description": "Immerse yourself in soothing sounds with the Melodic Rainstick, a unique instrument that mimics the calming effect of falling rain through its melodious tones.",
+        "image": "img/image9.jpg"
+      },
+      {
+        "name": "Enchanted Kaleidoscope",
+        "price": "55",
+        "description": "Embark on a visual journey with the Enchanted Kaleidoscope, a mesmerizing device that transforms ordinary sights into a kaleidoscope of enchanting patterns and colors.",
+        "image": "img/image10.jpg"
+      }
+  ]
+  

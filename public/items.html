@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Items</title>
+  <img src="img/logo.jpg" alt="Logo"  width="100" height="auto" class="logo">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 >Available Items</h1>
+  <div class="items-container", id="item-list-container">
+    <div class="item">
+      <img src="img/image1.jpg" alt="Item 1">
+      <h2>1 - Lightning Bolt Pen</h2>
+      <p>$10</p>
+    </div>
+    <div class="item">
+      <img src="img/image2.jpg" alt="Item 2">
+      <h2>2 - Bubblegum Backpack</h2>
+      <p>$15</p>
+    </div>
+    <div class="item">
+        <img src="img/image3.jpg" alt="Item 3">
+        <h2>3 - Rainbow Hula Hoop</h2>
+        <p>$20</p>
+      </div>
+      <div class="item">
+        <img src="img/image4.jpg" alt="Item 4">
+        <h2>4 - Galactic Tea Infuser</h2>
+        <p>$25</p>
+      </div>
+      <div class="item">
+        <img src="img/image5.jpg" alt="Item 5">
+        <h2>5 - Polka Dot Sunglasses</h2>
+        <p>$30</p>
+      </div>
+      <div class="item">
+        <img src="img/image6.jpg" alt="Item 6">
+        <h2>6 - Pixelated Rubik's Cube</h2>
+        <p>$35</p>
+      </div>
+      <div class="item">
+        <img src="img/image7.jpg" alt="Item 7">
+        <h2>7 - Doodle Notebook</h2>
+        <p>$40</p>
+      </div>
+      <div class="item">
+        <img src="img/image8.jpg" alt="Item 8">
+        <h2>8 - Cloud Slippers</h2>
+        <p>$45</p>
+      </div>
+      <div class="item">
+        <img src="img/image9.jpg" alt="Item 2">
+        <h2>9 - Melodic Rainstick</h2>
+        <p>$50</p>
+      </div>
+      <div class="item">
+        <img src="img/image10.jpg" alt="Item 2">
+        <h2>10 - Enchanted Kaleidoscope</h2>
+        <p>$55</p>
+      </div>
+    <!-- Repeat the above item code for the remaining items -->
+  </div>
+
+  
+    <!-- Item Selection Menu -->
+    <div id="item-selection-menu" class="item-selection-menu">
+        <div id="item-details" class="item-details">
+          <!-- Item details will be populated dynamically with JavaScript -->
+        </div>
+        <div class="button-container">
+          <button id="add-to-cart-button" class="add-to-cart-button">Add to Cart</button>
+          <button id="back-button" class="back-button">Back</button>
+        </div>
+      </div>
+
+  <div id="cart-message-container"></div> <!-- Container for displaying messages -->
+
+  <script src="js/script.js"></script>
+  <script>
+  // Call the fetchItemData function and use the returned data
+  fetchItemData('items/items.json')
+      .then(itemsData => {
+        // Assign the retrieved data to the ItemsData variable
+        const ItemsData = itemsData;
+
+        // Continue with the logic that uses the ItemsData variable
+        const items = document.querySelectorAll('.item');
+        items.forEach((item, index) => {
+          item.addEventListener('click', function() {
+            const selectedItem = ItemsData[index];
+            showItemSelectionMenu(selectedItem);
+          });
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching item data:', error);
+      });
+
+// Add event listener to the Add to Cart button
+// Add event listener to the Add to Cart button
+const addToCartButton = document.getElementById('add-to-cart-button');
+const messageContainer = document.getElementById('cart-message-container');
+addToCartButton.addEventListener('click', function(event) {
+  handleAddToCart(event, messageContainer);
+});
+
+
+    // Add event listener to the Back button
+    const backButton = document.getElementById('back-button');
+    backButton.addEventListener('click', handleBackButton);
+  </script>
+</body>
+</html>

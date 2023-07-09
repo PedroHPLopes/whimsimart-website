@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Reset</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <img src="img/logo.jpg" alt="Logo"  width="100" height="auto" class="logo">
+  <div class="reset-form">
+    <h2>Reset Your Password</h2>
+    <form id="reset-form">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" placeholder="example@example.com">
+      <button type="submit" id="reset-button">Send Password Reset Email</button>
+    </form>
+  </div>
+
+  <div id="reset-message-container"></div> <!-- Container for displaying reset messages -->
+
+  <script src="js/script.js"></script>
+  <script>
+    const resetForm = document.getElementById('reset-form');
+    const messageContainer = document.getElementById('reset-message-container');
+    resetForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      handleResetFormSubmission(event, messageContainer);
+    });
+  </script>
+</body>
+</html>

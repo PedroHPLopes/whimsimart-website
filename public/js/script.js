@@ -99,7 +99,7 @@ function handleResetFormSubmission(event) {
     setTimeout(() => {
       messageElement.remove();
     }, 2000);
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   }
 
 }

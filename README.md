@@ -1,4 +1,4 @@
-# Project Name
+# WhimsiMart Website
 
 Website Development using Large Language Models
 
